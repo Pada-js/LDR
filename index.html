@@ -81,336 +81,353 @@
   </div>
   
   <script>
+    // Tableau contenant tous les champions chargés depuis le JSON
     let championData = [];
     let globalHistory = [];
     let currentRound = {};
     const roles = ["top", "jgl", "mid", "adc", "sup"];
 
+    // Charge les données depuis un fichier JSON (champions + historique) et initialise la session
     function loadFromJSON(json) {
-      if (json.champions && Array.isArray(json.champions)) {
-        championData = json.champions;
-        globalHistory = json.history || [];
-    
-        if (!championData.some(c => Array.isArray(c.roles) && c.roles.length > 0)) {
-          distributeInitialRoles();
+          if (json.champions && Array.isArray(json.champions)) {
+            championData = json.champions;
+            globalHistory = json.history || [];
+        
+            if (!championData.some(c => Array.isArray(c.roles) && c.roles.length > 0)) {
+              distributeInitialRoles();
+            }
+        
+            if (globalHistory.length > 0) {
+              const lastGame = globalHistory[globalHistory.length - 1];
+              currentRound = lastGame.round;
+              displayCurrentGame();
+            }
+        
+            renderPools();
+            updateButtonVisibility();
+          } else {
+            console.error("Fichier JSON invalide.");
+          }
         }
-    
-        if (globalHistory.length > 0) {
-          const lastGame = globalHistory[globalHistory.length - 1];
-          currentRound = lastGame.round;
-          displayCurrentGame();
-        }
-    
-        renderPools();
-        updateButtonVisibility();
-      } else {
-        console.error("Fichier JSON invalide.");
-      }
-    }
 
+    // Mélange le tableau
     function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-    }
+          for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+          }
+        }
 
+    // Répartit équitablement les champions dans les 5 rôles, initialise HP et statut de victoire
     function distributeInitialRoles() {
-      const total = championData.length;
-      const remainder = total % 5;
-      const validChampions = [...championData];
-      shuffleArray(validChampions);
-      if (remainder !== 0) validChampions.splice(-remainder);
-      const perRole = validChampions.length / 5;
-      for (let i = 0; i < validChampions.length; i++) {
-        const role = roles[Math.floor(i / perRole)];
-        validChampions[i].roles = [role];
-        validChampions[i].win = false;
-        validChampions[i].hp = 5;
-      }
-    }
+          const total = championData.length;
+          const remainder = total % 5;
+          const validChampions = [...championData];
+          shuffleArray(validChampions);
+          if (remainder !== 0) validChampions.splice(-remainder);
+          const perRole = validChampions.length / 5;
+          for (let i = 0; i < validChampions.length; i++) {
+            const role = roles[Math.floor(i / perRole)];
+            validChampions[i].roles = [role];
+            validChampions[i].win = false;
+            validChampions[i].hp = 5;
+          }
+        }
 
-  function renderPools() {
-    const roleContainers = {
-      top: document.getElementById("top-pool"),
-      jgl: document.getElementById("jgl-pool"),
-      mid: document.getElementById("mid-pool"),
-      adc: document.getElementById("adc-pool"),
-      sup: document.getElementById("sup-pool")
-    };
-    const winnerContainer = document.getElementById("winner-pool");
-    Object.values(roleContainers).forEach(c => c.innerHTML = "");
-    winnerContainer.innerHTML = "";
+    // Affiche tous les champions dans leur rôle actuel ou dans la zone des gagnants
+    function renderPools() {
+        const roleContainers = {
+          top: document.getElementById("top-pool"),
+          jgl: document.getElementById("jgl-pool"),
+          mid: document.getElementById("mid-pool"),
+          adc: document.getElementById("adc-pool"),
+          sup: document.getElementById("sup-pool")
+        };
+        const winnerContainer = document.getElementById("winner-pool");
+        Object.values(roleContainers).forEach(c => c.innerHTML = "");
+        winnerContainer.innerHTML = "";
 
-    for (const champ of championData) {
-      const div = document.createElement("div");
-      div.className = "champion";
-      div.style.position = "relative";
+        for (const champ of championData) {
+          const div = document.createElement("div");
+          div.className = "champion";
+          div.style.position = "relative";
 
-      const img = document.createElement("img");
-      img.src = champ.image;
-      img.alt = champ.name;
-      img.title = champ.name;
+          const img = document.createElement("img");
+          img.src = champ.image;
+          img.alt = champ.name;
+          img.title = champ.name;
 
-      const hpBadge = document.createElement("div");
-      hpBadge.style.position = "absolute";
-      hpBadge.style.bottom = "2px";
-      hpBadge.style.right = "2px";
-      hpBadge.style.fontSize = "12px";
-      hpBadge.style.fontWeight = "bold";
-      hpBadge.style.color = "white";
-      hpBadge.style.textShadow = "1px 1px 2px black";
-      hpBadge.innerHTML = `${champ.hp} ❤️`;
+          const hpBadge = document.createElement("div");
+          hpBadge.style.position = "absolute";
+          hpBadge.style.bottom = "2px";
+          hpBadge.style.right = "2px";
+          hpBadge.style.fontSize = "12px";
+          hpBadge.style.fontWeight = "bold";
+          hpBadge.style.color = "white";
+          hpBadge.style.textShadow = "1px 1px 2px black";
+          hpBadge.innerHTML = `${champ.hp} ❤️`;
 
-      div.appendChild(img);
-      div.appendChild(hpBadge);
+          div.appendChild(img);
+          div.appendChild(hpBadge);
 
-      if (champ.win) {
-        winnerContainer.appendChild(div);
-      } else {
-        const lastRole = champ.roles?.[champ.roles.length - 1];
-        if (!lastRole || !roleContainers[lastRole]) continue;
-        roleContainers[lastRole].appendChild(div);
-      }
-    }
-  };
+          if (champ.win) {
+            winnerContainer.appendChild(div);
+          } else {
+            const lastRole = champ.roles?.[champ.roles.length - 1];
+            if (!lastRole || !roleContainers[lastRole]) continue;
+            roleContainers[lastRole].appendChild(div);
+          }
+        }
+      };
 
 
+    // Gère l'affichage des boutons selon si une partie est en cours ou non
     function updateButtonVisibility() {
-      const btnGame = document.querySelector(".btn-game");
-      const btnWin = document.querySelector(".btn-win");
-      const btnLose = document.querySelector(".btn-lose");
-      if (Object.keys(currentRound).length === 0) {
-        btnGame.style.display = "inline-block";
-        btnWin.style.display = "none";
-        btnLose.style.display = "none";
-      } else {
-        btnGame.style.display = "none";
-        btnWin.style.display = "inline-block";
-        btnLose.style.display = "inline-block";
-      }
-      updateScore();
-    } 
+          const btnGame = document.querySelector(".btn-game");
+          const btnWin = document.querySelector(".btn-win");
+          const btnLose = document.querySelector(".btn-lose");
+          if (Object.keys(currentRound).length === 0) {
+            btnGame.style.display = "inline-block";
+            btnWin.style.display = "none";
+            btnLose.style.display = "none";
+          } else {
+            btnGame.style.display = "none";
+            btnWin.style.display = "inline-block";
+            btnLose.style.display = "inline-block";
+          }
+          updateScore();
+        } 
 
-    document.getElementById("import-btn").addEventListener("click", () => {
-      document.getElementById("import-file").click();
-    });
+        document.getElementById("import-btn").addEventListener("click", () => {
+          document.getElementById("import-file").click();
+        });
 
+    // Charge un fichier JSON externe et l'applique à l'état du jeu
     document.getElementById("import-file").addEventListener("change", (event) => {
-      const file = event.target.files[0];
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        try {
-          const json = JSON.parse(e.target.result);
-          loadFromJSON(json);
-          alert("Import réussi : " + championData.length + " champions chargés.");
-        } catch (err) {
-          alert("Erreur de lecture JSON : " + err.message);
-        }
-      };
-      reader.readAsText(file);
-    });
+          const file = event.target.files[0];
+          const reader = new FileReader();
+          reader.onload = function(e) {
+            try {
+              const json = JSON.parse(e.target.result);
+              loadFromJSON(json);
+              alert("Import réussi : " + championData.length + " champions chargés.");
+            } catch (err) {
+              alert("Erreur de lecture JSON : " + err.message);
+            }
+          };
+          reader.readAsText(file);
+        });
 
+    // Exporte l'état actuel des champions et de l'historique en fichier JSON
     document.getElementById("export-btn").addEventListener("click", () => {
-      const exportData = {
-        champions: championData,
-        history: globalHistory
-      };
-      const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: "application/json" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "champions_export.json";
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    });
+          const exportData = {
+            champions: championData,
+            history: globalHistory
+          };
+          const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: "application/json" });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = "champions_export.json";
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+        });
 
+    // Redémarre entièrement la session (réinitialise les rôles et l'historique)
     document.getElementById("restart-btn").addEventListener("click", () => {
-      distributeInitialRoles();
-      globalHistory = [];
-      currentRound = {};
-      renderPools();
-      updateButtonVisibility();
-    });
+          distributeInitialRoles();
+          globalHistory = [];
+          currentRound = {};
+          renderPools();
+          updateButtonVisibility();
+        });
 
+    // Tire un champion aléatoire valide pour chaque rôle et commence une nouvelle partie
     document.querySelector(".btn-game").addEventListener("click", () => {
-      currentRound = {};
-      for (const role of roles) {
-        const candidates = championData.filter(c => c.hp > 0 && !c.win && c.roles[c.roles.length - 1] === role);
-        if (candidates.length === 0) {
-          alert("Le rôle " + role + " n'a plus de champions disponibles. Partie terminer.");
-          return;
-        }
-        const selected = candidates[Math.floor(Math.random() * candidates.length)];
-        currentRound[role] = selected;
-      }
-      globalHistory.push({ id: globalHistory.length + 1, win: false, round: JSON.parse(JSON.stringify(currentRound)) });
-      displayCurrentGame();
-      updateButtonVisibility();
-    });
+          currentRound = {};
+          for (const role of roles) {
+            const candidates = championData.filter(c => c.hp > 0 && !c.win && c.roles[c.roles.length - 1] === role);
+            if (candidates.length === 0) {
+              alert("Le rôle " + role + " n'a plus de champions disponibles. Partie terminer.");
+              return;
+            }
+            const selected = candidates[Math.floor(Math.random() * candidates.length)];
+            currentRound[role] = selected;
+          }
+          globalHistory.push({ id: globalHistory.length + 1, win: false, round: JSON.parse(JSON.stringify(currentRound)) });
+          displayCurrentGame();
+          updateButtonVisibility();
+        });
 
+    // Affiche la composition actuelle de la partie en cours (5 champions)
     function displayCurrentGame() {
-      let display = document.getElementById("current-game");
-      if (!display) {
-        display = document.createElement("div");
-        display.id = "current-game";
-        display.style.marginTop = "20px";
-        document.querySelector(".controls").after(display);
-      }
-      let html = "<h3>Game en cours :</h3><div style='display: flex; justify-content: center; gap: 10px;'>";
-      for (const role in currentRound) {
-        const champ = currentRound[role];
-        html += `
-          <div style="text-align: center;">
-            <div class="champion">
-              <img src="${champ.image}" alt="${champ.name}" />
-            </div>
-            <div>${role.toUpperCase()}</div>
-          </div>
-        `;
-      }
-      html += "</div>";
-      display.innerHTML = html;
-    }
+          let display = document.getElementById("current-game");
+          if (!display) {
+            display = document.createElement("div");
+            display.id = "current-game";
+            display.style.marginTop = "20px";
+            document.querySelector(".controls").after(display);
+          }
+          let html = "<h3>Game en cours :</h3><div style='display: flex; justify-content: center; gap: 10px;'>";
+          for (const role in currentRound) {
+            const champ = currentRound[role];
+            html += `
+              <div style="text-align: center;">
+                <div class="champion">
+                  <img src="${champ.image}" alt="${champ.name}" />
+                </div>
+                <div>${role.toUpperCase()}</div>
+              </div>
+            `;
+          }
+          html += "</div>";
+          display.innerHTML = html;
+        }
 
+    // Marque tous les champions de la partie comme gagnants, puis lance une nouvelle partie
     document.querySelector(".btn-win").addEventListener("click", () => {
-      for (const champ of Object.values(currentRound)) {
-        champ.win = true;
-      }
-      currentRound = {};
-      globalHistory[globalHistory.length - 1].win = true;
-      renderPools();
-      displayCurrentGame();
-      updateButtonVisibility();
-      setTimeout(() => document.querySelector(".btn-game").click(), 200);
-    });
+          for (const champ of Object.values(currentRound)) {
+            champ.win = true;
+          }
+          currentRound = {};
+          globalHistory[globalHistory.length - 1].win = true;
+          renderPools();
+          displayCurrentGame();
+          updateButtonVisibility();
+          setTimeout(() => document.querySelector(".btn-game").click(), 200);
+        });
 
+    // Gère une défaite : retrait de HP, redistribution des rôles si possible, sinon fin de partie
     document.querySelector(".btn-lose").addEventListener("click", () => {
-    const shuffledRoles = [...roles];
-    shuffleArray(shuffledRoles);
+        const shuffledRoles = [...roles];
+        shuffleArray(shuffledRoles);
 
-    let availableRoles = {};
-    for (const role of roles) {
-      availableRoles[role] = [];
-    }
+        let availableRoles = {};
+        for (const role of roles) {
+          availableRoles[role] = [];
+        }
 
-    // Étape 1 : filtrer les rôles valides pour chaque champion
-    for (const role in currentRound) {
-      const champ = currentRound[role];
-      champ.hp--;
+        for (const role in currentRound) {
+          const champ = currentRound[role];
+          champ.hp--;
 
-      if (champ.hp <= 0) {
-        alert(`${champ.name} est mort(e). Partie terminer.`);
+          if (champ.hp <= 0) {
+            alert(`${champ.name} est mort(e). Partie terminer.`);
+            updateButtonVisibility();
+            return;
+          }
+
+          const possibleRoles = roles.filter(r => !champ.roles.includes(r));
+          if (possibleRoles.length === 0) {
+            alert(`${champ.name} ne peut plus changer de rôle. Partie terminer.`);
+            updateButtonVisibility();
+            return;
+          }
+
+          for (const r of possibleRoles) {
+            availableRoles[r].push(champ);
+          }
+        }
+
+        const assigned = new Set();
+        for (const role of shuffledRoles) {
+          const champs = availableRoles[role].filter(c => !assigned.has(c));
+          if (champs.length > 0) {
+            const selected = champs[Math.floor(Math.random() * champs.length)];
+            selected.roles.push(role);
+            assigned.add(selected);
+          }
+        }
+
+        for (const role in currentRound) {
+          const champ = currentRound[role];
+          if (!assigned.has(champ)) {
+            const possible = roles.filter(r => !champ.roles.includes(r));
+            const newRole = possible[Math.floor(Math.random() * possible.length)];
+            champ.roles.push(newRole);
+          }
+        }
+
+        currentRound = {};
+        renderPools();
+        displayCurrentGame();
         updateButtonVisibility();
-        return;
+        setTimeout(() => document.querySelector(".btn-game").click(), 200);
+      });
+
+    // Charge automatiquement le fichier JSON au démarrage du site
+    window.addEventListener("DOMContentLoaded", () => {
+        fetch("champions.json")
+          .then(res => res.json())
+          .then(loadFromJSON)
+          .catch(err => console.error("Erreur de chargement du JSON par défaut:", err));
+      });
+      
+      updateButtonVisibility();
+
+    // Calcule et affiche le score total des champions ayant gagné (somme des HP)
+    function updateScore() {
+        const score = championData.filter(c => c.win).reduce((acc, champ) => acc + champ.hp, 0);
+        document.getElementById("score").textContent = "Score : " + score;
       }
 
-      const possibleRoles = roles.filter(r => !champ.roles.includes(r));
-      if (possibleRoles.length === 0) {
-        alert(`${champ.name} ne peut plus changer de rôle. Partie terminer.`);
-        updateButtonVisibility();
-        return;
+    // Génère dynamiquement le contenu du popup d'historique de session
+    function renderHistory() {
+        const container = document.getElementById("history-content");
+        container.innerHTML = "";
+
+        for (let entry of globalHistory) {
+          const result = entry.win ? "✅ Victoire" : "❌ Défaite";
+          const gameDiv = document.createElement("div");
+          gameDiv.style.marginBottom = "20px";
+          gameDiv.innerHTML = `<strong>Game #${entry.id}</strong> — ${result}<br/>`;
+
+          const round = entry.round;
+          for (const role in round) {
+            const champ = round[role];
+            gameDiv.innerHTML += `
+              <div style="display:inline-block; text-align:center; margin-right:10px;">
+                <div class="champion" style="width:40px; height:40px;">
+                  <img src="${champ.image}" alt="${champ.name}" style="width:100%; height:100%; object-fit:cover;" title="${champ.name}">
+                </div>
+                <div style="font-size:10px;">${role.toUpperCase()}</div>
+              </div>
+            `;
+          }
+
+          if (entry.win) {
+            const score = Object.values(round).reduce((acc, champ) => acc + champ.hp, 0);
+            gameDiv.innerHTML += `<br/><em>+ Score : ${score}</em>`;
+          }
+
+          container.appendChild(gameDiv);
+        }
+
+        if (globalHistory.length === 0) {
+          container.innerHTML = "<em>Aucune partie encore jouée.</em>";
+        }
       }
 
-      for (const r of possibleRoles) {
-        availableRoles[r].push(champ);
-      }
-    }
+    // Ouvre le popup d'historique de session
+    document.getElementById("history-btn").addEventListener("click", () => {
+        renderHistory();
+        document.getElementById("history-popup").style.display = "flex";
+      });
 
-    // Étape 2 : essayer d’assigner 1 champion par rôle
-    const assigned = new Set();
-    for (const role of shuffledRoles) {
-      const champs = availableRoles[role].filter(c => !assigned.has(c));
-      if (champs.length > 0) {
-        const selected = champs[Math.floor(Math.random() * champs.length)];
-        selected.roles.push(role);
-        assigned.add(selected);
-      }
-    }
+    // Ferme le popup d'historique (bouton ✖️)
+    document.getElementById("close-history").addEventListener("click", () => {
+        document.getElementById("history-popup").style.display = "none";
+      });
 
-    // Étape 3 : assigner les champions restants à un rôle aléatoire qu’ils n’ont jamais joué
-    for (const role in currentRound) {
-      const champ = currentRound[role];
-      if (!assigned.has(champ)) {
-        const possible = roles.filter(r => !champ.roles.includes(r));
-        const newRole = possible[Math.floor(Math.random() * possible.length)];
-        champ.roles.push(newRole);
-      }
-    }
+    // Ferme le popup d'historique si l'utilisateur clique en dehors de la boîte
+    document.getElementById("history-popup").addEventListener("click", (e) => {
+      if (e.target.id === "history-popup") {
+        document.getElementById("history-popup").style.display = "none";
+        }
+      });
 
-    currentRound = {};
-    renderPools();
-    displayCurrentGame();
-    updateButtonVisibility();
-    setTimeout(() => document.querySelector(".btn-game").click(), 200);
-  });
-
-  window.addEventListener("DOMContentLoaded", () => {
-    fetch("champions.json")
-      .then(res => res.json())
-      .then(loadFromJSON)
-      .catch(err => console.error("Erreur de chargement du JSON par défaut:", err));
-  });
-  
-  updateButtonVisibility();
-
-  function updateScore() {
-    const score = championData.filter(c => c.win).reduce((acc, champ) => acc + champ.hp, 0);
-    document.getElementById("score").textContent = "Score : " + score;
-  }
-
-  function renderHistory() {
-    const container = document.getElementById("history-content");
-    container.innerHTML = "";
-
-    for (let entry of globalHistory) {
-      const result = entry.win ? "✅ Victoire" : "❌ Défaite";
-      const gameDiv = document.createElement("div");
-      gameDiv.style.marginBottom = "20px";
-      gameDiv.innerHTML = `<strong>Game #${entry.id}</strong> — ${result}<br/>`;
-
-      const round = entry.round;
-      for (const role in round) {
-        const champ = round[role];
-        gameDiv.innerHTML += `
-          <div style="display:inline-block; text-align:center; margin-right:10px;">
-            <div class="champion" style="width:40px; height:40px;">
-              <img src="${champ.image}" alt="${champ.name}" style="width:100%; height:100%; object-fit:cover;" title="${champ.name}">
-            </div>
-            <div style="font-size:10px;">${role.toUpperCase()}</div>
-          </div>
-        `;
-      }
-
-      if (entry.win) {
-        const score = Object.values(round).reduce((acc, champ) => acc + champ.hp, 0);
-        gameDiv.innerHTML += `<br/><em>+ Score : ${score}</em>`;
-      }
-
-      container.appendChild(gameDiv);
-    }
-
-    if (globalHistory.length === 0) {
-      container.innerHTML = "<em>Aucune partie encore jouée.</em>";
-    }
-  }
-
-  document.getElementById("history-btn").addEventListener("click", () => {
-    renderHistory();
-    document.getElementById("history-popup").style.display = "flex";
-  });
-
-  document.getElementById("close-history").addEventListener("click", () => {
-    document.getElementById("history-popup").style.display = "none";
-  });
-
-  document.getElementById("history-popup").addEventListener("click", (e) => {
-    if (e.target.id === "history-popup") {
-      document.getElementById("history-popup").style.display = "none";
-    }
-  });
 
   </script>
   

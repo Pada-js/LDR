@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -416,3 +417,423 @@ const roles = ["top", "jgl", "mid", "adc", "sup"];
 </div>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>League des Randoms</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: linear-gradient(to bottom, #f0d4f9, #d1a9f6); color: #2b0030; text-align: center; }
+    header { display: flex; justify-content: space-between; align-items: center; background: #eee; padding: 10px 20px; border-bottom: 2px solid #444; }
+    .title { font-size: 2.5rem; font-weight: bold; color: #e87eff; text-shadow: 1px 1px #000; }
+    .btn { padding: 10px 20px; font-weight: bold; border: none; cursor: pointer; border-radius: 8px; margin: 0 5px; }
+    .btn-restart { background-color: #e87eff; color: white; }
+    .btn-import, .btn-export { background-color: #222; color: white; }
+    .btn-game { background-color: #6e3cbc; color: white; }
+    .btn-win { background-color: #28a745; color: white; }
+    .btn-lose { background-color: #dc3545; color: white; }
+    .board { display: flex; justify-content: space-evenly; margin-top: 20px; padding: 20px; }
+    .role-column { background: #f5e3fb; border-radius: 10px; padding: 15px; width: 18%; min-height: 400px; box-shadow: 0 0 10px #c0a0e0; }
+    .role-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 10px; border-bottom: 2px solid #333; }
+    .champion-pool { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; }
+    .champion { width: 40px; height: 40px; border: 2px solid #000; border-radius: 4px; overflow: hidden; position: relative; }
+    .champion img { width: 100%; height: 100%; object-fit: cover; }
+    .controls { margin-top: 30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="btn btn-restart" id="restart-btn">RESTART</button>
+    <div class="title">LEAGUE DES RANDOMS</div>
+    <div>
+      <button class="btn btn-import" id="import-btn">IMPORT</button>
+      <input type="file" id="import-file" accept="application/json" style="display:none">
+      <button class="btn btn-export" id="export-btn">EXPORT</button>
+    </div>
+  </header>
+
+  <div id="score" style="font-weight: bold; font-size: 1.2rem; margin-top: 10px;">Score : 0</div>
+  <button class="btn" id="history-btn">Historique de Session</button>
+
+  <div class="board">
+    <div class="role-column">
+      <div class="role-title">TOP</div>
+      <div class="champion-pool" id="top-pool"></div>
+    </div>
+    <div class="role-column">
+      <div class="role-title">JGL</div>
+      <div class="champion-pool" id="jgl-pool"></div>
+    </div>
+    <div class="role-column">
+      <div class="role-title">MID</div>
+      <div class="champion-pool" id="mid-pool"></div>
+    </div>
+    <div class="role-column">
+      <div class="role-title">ADC</div>
+      <div class="champion-pool" id="adc-pool"></div>
+    </div>
+    <div class="role-column">
+      <div class="role-title">SUP</div>
+      <div class="champion-pool" id="sup-pool"></div>
+    </div>
+</div>
+
+  <div class="controls">
+    <button class="btn btn-game">GAME</button>
+    <button class="btn btn-win">VICTOIRE</button>
+    <button class="btn btn-lose">DEFAITE</button>
+  </div>
+
+  <div class="role-column" style="margin: 0 auto; width: fit-content; margin-top: 30px;" >
+    <div class="role-title">Champions Gagnants :</div>
+    <div class="champion-pool" id="winner-pool"></div>
+  </div>
+
+
+  <div id="history-popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); backdrop-filter: blur(4px); z-index:9999; justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; border-radius:12px; max-height:80%; max-width:90%; overflow-y:auto; position:relative;">
+    <button id="close-history" style="position:absolute; top:10px; right:10px; font-size:1.2rem; border:none; background:none; cursor:pointer;">✖️</button>
+    <h2>Historique de la Session</h2>
+    <div id="history-content" style="text-align:left;"></div>
+  </div>
+  
+  <script>
+    let championData = [];
+let globalHistory = [];
+let currentRound = {};
+const roles = ["top", "jgl", "mid", "adc", "sup"];
+
+    function loadFromJSON(json) {
+      if (json.champions && Array.isArray(json.champions)) {
+        championData = json.champions;
+        globalHistory = json.history || [];
+    
+        if (!championData.some(c => Array.isArray(c.roles) && c.roles.length > 0)) {
+          distributeInitialRoles();
+        }
+    
+        if (globalHistory.length > 0) {
+          const lastGame = globalHistory[globalHistory.length - 1];
+          currentRound = lastGame.round;
+          displayCurrentGame();
+        }
+    
+        renderPools();
+        updateButtonVisibility();
+      } else {
+        console.error("Fichier JSON invalide.");
+      }
+    }
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    function distributeInitialRoles() {
+      const total = championData.length;
+      const remainder = total % 5;
+      const validChampions = [...championData];
+      shuffleArray(validChampions);
+      if (remainder !== 0) validChampions.splice(-remainder);
+      const perRole = validChampions.length / 5;
+      for (let i = 0; i < validChampions.length; i++) {
+        const role = roles[Math.floor(i / perRole)];
+        validChampions[i].roles = [role];
+        validChampions[i].win = false;
+        validChampions[i].hp = 5;
+      }
+    }
+
+  function renderPools() {
+    const roleContainers = {
+      top: document.getElementById("top-pool"),
+      jgl: document.getElementById("jgl-pool"),
+      mid: document.getElementById("mid-pool"),
+      adc: document.getElementById("adc-pool"),
+      sup: document.getElementById("sup-pool")
+    };
+    const winnerContainer = document.getElementById("winner-pool");
+    Object.values(roleContainers).forEach(c => c.innerHTML = "");
+    winnerContainer.innerHTML = "";
+
+    for (const champ of championData) {
+      const div = document.createElement("div");
+      div.className = "champion";
+      div.style.position = "relative";
+
+      const img = document.createElement("img");
+      img.src = champ.image;
+      img.alt = champ.name;
+      img.title = champ.name;
+
+      const hpBadge = document.createElement("div");
+      hpBadge.style.position = "absolute";
+      hpBadge.style.bottom = "2px";
+      hpBadge.style.right = "2px";
+      hpBadge.style.fontSize = "12px";
+      hpBadge.style.fontWeight = "bold";
+      hpBadge.style.color = "white";
+      hpBadge.style.textShadow = "1px 1px 2px black";
+      hpBadge.innerHTML = `${champ.hp} ❤️`;
+
+      div.appendChild(img);
+      div.appendChild(hpBadge);
+
+      if (champ.win) {
+        winnerContainer.appendChild(div);
+      } else {
+        const lastRole = champ.roles?.[champ.roles.length - 1];
+        if (!lastRole || !roleContainers[lastRole]) continue;
+        roleContainers[lastRole].appendChild(div);
+      }
+    }
+  };
+
+
+    function updateButtonVisibility() {
+      const btnGame = document.querySelector(".btn-game");
+      const btnWin = document.querySelector(".btn-win");
+      const btnLose = document.querySelector(".btn-lose");
+      if (Object.keys(currentRound).length === 0) {
+        btnGame.style.display = "inline-block";
+        btnWin.style.display = "none";
+        btnLose.style.display = "none";
+      } else {
+        btnGame.style.display = "none";
+        btnWin.style.display = "inline-block";
+        btnLose.style.display = "inline-block";
+      }
+      updateScore();
+    } 
+
+    document.getElementById("import-btn").addEventListener("click", () => {
+      document.getElementById("import-file").click();
+    });
+
+    document.getElementById("import-file").addEventListener("change", (event) => {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const json = JSON.parse(e.target.result);
+          loadFromJSON(json);
+          alert("Import réussi : " + championData.length + " champions chargés.");
+        } catch (err) {
+          alert("Erreur de lecture JSON : " + err.message);
+        }
+      };
+      reader.readAsText(file);
+    });
+
+    document.getElementById("export-btn").addEventListener("click", () => {
+      const exportData = {
+        champions: championData,
+        history: globalHistory
+      };
+      const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "champions_export.json";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+
+    document.getElementById("restart-btn").addEventListener("click", () => {
+      distributeInitialRoles();
+      globalHistory = [];
+      currentRound = {};
+      renderPools();
+      updateButtonVisibility();
+    });
+
+    document.querySelector(".btn-game").addEventListener("click", () => {
+      currentRound = {};
+      for (const role of roles) {
+        const candidates = championData.filter(c => c.hp > 0 && !c.win && c.roles[c.roles.length - 1] === role);
+        if (candidates.length === 0) {
+          alert("Le rôle " + role + " n'a plus de champions disponibles. Partie terminer.");
+          return;
+        }
+        const selected = candidates[Math.floor(Math.random() * candidates.length)];
+        currentRound[role] = selected;
+      }
+      globalHistory.push({ id: globalHistory.length + 1, win: false, round: JSON.parse(JSON.stringify(currentRound)) });
+      displayCurrentGame();
+      updateButtonVisibility();
+    });
+
+    function displayCurrentGame() {
+      let display = document.getElementById("current-game");
+      if (!display) {
+        display = document.createElement("div");
+        display.id = "current-game";
+        display.style.marginTop = "20px";
+        document.querySelector(".controls").after(display);
+      }
+      let html = "<h3>Game en cours :</h3><div style='display: flex; justify-content: center; gap: 10px;'>";
+      for (const role in currentRound) {
+        const champ = currentRound[role];
+        html += `
+          <div style="text-align: center;">
+            <div class="champion">
+              <img src="${champ.image}" alt="${champ.name}" />
+            </div>
+            <div>${role.toUpperCase()}</div>
+          </div>
+        `;
+      }
+      html += "</div>";
+      display.innerHTML = html;
+    }
+
+    document.querySelector(".btn-win").addEventListener("click", () => {
+      for (const champ of Object.values(currentRound)) {
+        champ.win = true;
+      }
+      currentRound = {};
+      globalHistory[globalHistory.length - 1].win = true;
+      renderPools();
+      displayCurrentGame();
+      updateButtonVisibility();
+      setTimeout(() => document.querySelector(".btn-game").click(), 200);
+    });
+
+    document.querySelector(".btn-lose").addEventListener("click", () => {
+    const shuffledRoles = [...roles];
+    shuffleArray(shuffledRoles);
+
+    let availableRoles = {};
+    for (const role of roles) {
+      availableRoles[role] = [];
+    }
+
+    // Étape 1 : filtrer les rôles valides pour chaque champion
+    for (const role in currentRound) {
+      const champ = currentRound[role];
+      champ.hp--;
+
+      if (champ.hp <= 0) {
+        alert(`${champ.name} est mort(e). Partie terminer.`);
+        updateButtonVisibility();
+        return;
+      }
+
+      const possibleRoles = roles.filter(r => !champ.roles.includes(r));
+      if (possibleRoles.length === 0) {
+        alert(`${champ.name} ne peut plus changer de rôle. Partie terminer.`);
+        updateButtonVisibility();
+        return;
+      }
+
+      for (const r of possibleRoles) {
+        availableRoles[r].push(champ);
+      }
+    }
+
+    // Étape 2 : essayer d’assigner 1 champion par rôle
+    const assigned = new Set();
+    for (const role of shuffledRoles) {
+      const champs = availableRoles[role].filter(c => !assigned.has(c));
+      if (champs.length > 0) {
+        const selected = champs[Math.floor(Math.random() * champs.length)];
+        selected.roles.push(role);
+        assigned.add(selected);
+      }
+    }
+
+    // Étape 3 : assigner les champions restants à un rôle aléatoire qu’ils n’ont jamais joué
+    for (const role in currentRound) {
+      const champ = currentRound[role];
+      if (!assigned.has(champ)) {
+        const possible = roles.filter(r => !champ.roles.includes(r));
+        const newRole = possible[Math.floor(Math.random() * possible.length)];
+        champ.roles.push(newRole);
+      }
+    }
+
+    currentRound = {};
+    renderPools();
+    displayCurrentGame();
+    updateButtonVisibility();
+    setTimeout(() => document.querySelector(".btn-game").click(), 200);
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    fetch("https://raw.githubusercontent.com/Pada-js/LDR/refs/heads/main/champions.json")
+      .then(res => res.json())
+      .then(loadFromJSON)
+      .catch(err => console.error("Erreur de chargement du JSON par défaut:", err));
+  });
+  
+  updateButtonVisibility();
+
+  function updateScore() {
+    const score = championData.filter(c => c.win).reduce((acc, champ) => acc + champ.hp, 0);
+    document.getElementById("score").textContent = "Score : " + score;
+  }
+
+  function renderHistory() {
+    const container = document.getElementById("history-content");
+    container.innerHTML = "";
+
+    for (let entry of globalHistory) {
+      const result = entry.win ? "✅ Victoire" : "❌ Défaite";
+      const gameDiv = document.createElement("div");
+      gameDiv.style.marginBottom = "20px";
+      gameDiv.innerHTML = `<strong>Game #${entry.id}</strong> — ${result}<br/>`;
+
+      const round = entry.round;
+      for (const role in round) {
+        const champ = round[role];
+        gameDiv.innerHTML += `
+          <div style="display:inline-block; text-align:center; margin-right:10px;">
+            <div class="champion" style="width:40px; height:40px;">
+              <img src="${champ.image}" alt="${champ.name}" style="width:100%; height:100%; object-fit:cover;" title="${champ.name}">
+            </div>
+            <div style="font-size:10px;">${role.toUpperCase()}</div>
+          </div>
+        `;
+      }
+
+      if (entry.win) {
+        const score = Object.values(round).reduce((acc, champ) => acc + champ.hp, 0);
+        gameDiv.innerHTML += `<br/><em>+ Score : ${score}</em>`;
+      }
+
+      container.appendChild(gameDiv);
+    }
+
+    if (globalHistory.length === 0) {
+      container.innerHTML = "<em>Aucune partie encore jouée.</em>";
+    }
+  }
+
+  document.getElementById("history-btn").addEventListener("click", () => {
+    renderHistory();
+    document.getElementById("history-popup").style.display = "flex";
+  });
+
+  document.getElementById("close-history").addEventListener("click", () => {
+    document.getElementById("history-popup").style.display = "none";
+  });
+
+  document.getElementById("history-popup").addEventListener("click", (e) => {
+    if (e.target.id === "history-popup") {
+      document.getElementById("history-popup").style.display = "none";
+    }
+  });
+
+  </script>
+  
+</div>
+</body>
+</html>
+>>>>>>> f81c81533a3ef7851d4da1d9100a1aaac04ecfc4

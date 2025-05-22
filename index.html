@@ -347,7 +347,7 @@
   });
 
   window.addEventListener("DOMContentLoaded", () => {
-    fetch("https://raw.githubusercontent.com/Pada-js/LDR/refs/heads/main/champions.json")
+    fetch("champions.json")
       .then(res => res.json())
       .then(loadFromJSON)
       .catch(err => console.error("Erreur de chargement du JSON par défaut:", err));

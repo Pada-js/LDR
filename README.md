@@ -1,2 +1,0 @@
-# LDR
-Personnal LoL APP

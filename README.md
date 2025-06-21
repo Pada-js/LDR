@@ -85,7 +85,7 @@
 
 ## 👤 Auteur
 
-Développé par **Mehdi (Pada-js)**  
+Développé par **(Pada-js)**  
 💬 Projet personnel, fun et librement améliorable.
 
 ---

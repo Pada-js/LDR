@@ -1359,6 +1359,14 @@
       "hp": 5,
       "roles": [],
       "win": false
+    },
+     {
+      "id": 171,
+      "name": "Yunara",
+      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Yunara.png",
+      "hp": 5,
+      "roles": [],
+      "win": false
     }
   ]
 }

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Aatrox",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Aatrox.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Aatrox.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "name": "Ahri",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ahri.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Ahri.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "name": "Akali",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Akali.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Akali.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "name": "Akshan",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Akshan.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Akshan.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "name": "Alistar",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Alistar.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Alistar.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -43,7 +43,7 @@
     {
       "id": 6,
       "name": "Ambessa",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ambessa.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Ambessa.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -51,7 +51,7 @@
     {
       "id": 7,
       "name": "Amumu",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Amumu.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Amumu.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -59,7 +59,7 @@
     {
       "id": 8,
       "name": "Anivia",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Anivia.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Anivia.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -67,7 +67,7 @@
     {
       "id": 9,
       "name": "Annie",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Annie.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Annie.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -75,7 +75,7 @@
     {
       "id": 10,
       "name": "Aphelios",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Aphelios.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Aphelios.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -83,7 +83,7 @@
     {
       "id": 11,
       "name": "Ashe",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ashe.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Ashe.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -91,7 +91,7 @@
     {
       "id": 12,
       "name": "Aurelion Sol",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/AurelionSol.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/AurelionSol.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -99,7 +99,7 @@
     {
       "id": 13,
       "name": "Aurora",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Aurora.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Aurora.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -107,7 +107,7 @@
     {
       "id": 14,
       "name": "Azir",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Azir.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Azir.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -115,7 +115,7 @@
     {
       "id": 15,
       "name": "Bard",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Bard.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Bard.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -123,7 +123,7 @@
     {
       "id": 16,
       "name": "Bel'Veth",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Belveth.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Belveth.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -131,7 +131,7 @@
     {
       "id": 17,
       "name": "Blitzcrank",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Blitzcrank.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Blitzcrank.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -139,7 +139,7 @@
     {
       "id": 18,
       "name": "Brand",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Brand.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Brand.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -147,7 +147,7 @@
     {
       "id": 19,
       "name": "Braum",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Braum.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Braum.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -155,7 +155,7 @@
     {
       "id": 20,
       "name": "Briar",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Briar.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Briar.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -163,7 +163,7 @@
     {
       "id": 21,
       "name": "Caitlyn",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Caitlyn.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Caitlyn.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -171,7 +171,7 @@
     {
       "id": 22,
       "name": "Camille",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Camille.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Camille.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -179,7 +179,7 @@
     {
       "id": 23,
       "name": "Cassiopeia",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Cassiopeia.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Cassiopeia.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -187,7 +187,7 @@
     {
       "id": 24,
       "name": "Cho'Gath",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Chogath.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Chogath.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -195,7 +195,7 @@
     {
       "id": 25,
       "name": "Corki",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Corki.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Corki.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -203,7 +203,7 @@
     {
       "id": 26,
       "name": "Darius",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Darius.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Darius.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -211,7 +211,7 @@
     {
       "id": 27,
       "name": "Diana",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Diana.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Diana.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -219,7 +219,7 @@
     {
       "id": 28,
       "name": "Draven",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Draven.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Draven.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -227,7 +227,7 @@
     {
       "id": 29,
       "name": "Dr. Mundo",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/DrMundo.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/DrMundo.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -235,7 +235,7 @@
     {
       "id": 30,
       "name": "Ekko",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ekko.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Ekko.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -243,7 +243,7 @@
     {
       "id": 31,
       "name": "Elise",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Elise.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Elise.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -251,7 +251,7 @@
     {
       "id": 32,
       "name": "Evelynn",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Evelynn.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Evelynn.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -259,7 +259,7 @@
     {
       "id": 33,
       "name": "Ezreal",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ezreal.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Ezreal.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -267,7 +267,7 @@
     {
       "id": 34,
       "name": "Fiddlesticks",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Fiddlesticks.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Fiddlesticks.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -275,7 +275,7 @@
     {
       "id": 35,
       "name": "Fiora",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Fiora.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Fiora.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -283,7 +283,7 @@
     {
       "id": 36,
       "name": "Fizz",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Fizz.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Fizz.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -291,7 +291,7 @@
     {
       "id": 37,
       "name": "Galio",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Galio.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Galio.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -299,7 +299,7 @@
     {
       "id": 38,
       "name": "Gangplank",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Gangplank.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Gangplank.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -307,7 +307,7 @@
     {
       "id": 39,
       "name": "Garen",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Garen.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Garen.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -315,7 +315,7 @@
     {
       "id": 40,
       "name": "Gnar",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Gnar.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Gnar.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -323,7 +323,7 @@
     {
       "id": 41,
       "name": "Gragas",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Gragas.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Gragas.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -331,7 +331,7 @@
     {
       "id": 42,
       "name": "Graves",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Graves.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Graves.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -339,7 +339,7 @@
     {
       "id": 43,
       "name": "Gwen",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Gwen.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Gwen.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -347,7 +347,7 @@
     {
       "id": 44,
       "name": "Hecarim",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Hecarim.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Hecarim.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -355,7 +355,7 @@
     {
       "id": 45,
       "name": "Heimerdinger",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Heimerdinger.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Heimerdinger.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -363,7 +363,7 @@
     {
       "id": 46,
       "name": "Hwei",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Hwei.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Hwei.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -371,7 +371,7 @@
     {
       "id": 47,
       "name": "Illaoi",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Illaoi.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Illaoi.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -379,7 +379,7 @@
     {
       "id": 48,
       "name": "Irelia",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Irelia.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Irelia.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -387,7 +387,7 @@
     {
       "id": 49,
       "name": "Ivern",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ivern.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Ivern.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -395,7 +395,7 @@
     {
       "id": 50,
       "name": "Janna",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Janna.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Janna.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -403,7 +403,7 @@
     {
       "id": 51,
       "name": "Jarvan IV",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/JarvanIV.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/JarvanIV.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -411,7 +411,7 @@
     {
       "id": 52,
       "name": "Jax",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Jax.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Jax.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -419,7 +419,7 @@
     {
       "id": 53,
       "name": "Jayce",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Jayce.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Jayce.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -427,7 +427,7 @@
     {
       "id": 54,
       "name": "Jhin",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Jhin.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Jhin.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -435,7 +435,7 @@
     {
       "id": 55,
       "name": "Jinx",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Jinx.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Jinx.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -443,7 +443,7 @@
     {
       "id": 56,
       "name": "Kai'Sa",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kaisa.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Kaisa.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -451,7 +451,7 @@
     {
       "id": 57,
       "name": "Kalista",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kalista.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Kalista.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -459,7 +459,7 @@
     {
       "id": 58,
       "name": "Karma",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Karma.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Karma.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -467,7 +467,7 @@
     {
       "id": 59,
       "name": "Karthus",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Karthus.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Karthus.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -475,7 +475,7 @@
     {
       "id": 60,
       "name": "Kassadin",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kassadin.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Kassadin.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -483,7 +483,7 @@
     {
       "id": 61,
       "name": "Katarina",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Katarina.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Katarina.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -491,7 +491,7 @@
     {
       "id": 62,
       "name": "Kayle",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kayle.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Kayle.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -499,7 +499,7 @@
     {
       "id": 63,
       "name": "Kayn",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kayn.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Kayn.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -507,7 +507,7 @@
     {
       "id": 64,
       "name": "Kennen",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kennen.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Kennen.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -515,7 +515,7 @@
     {
       "id": 65,
       "name": "Kha'Zix",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Khazix.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Khazix.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -523,7 +523,7 @@
     {
       "id": 66,
       "name": "Kindred",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kindred.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Kindred.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -531,7 +531,7 @@
     {
       "id": 67,
       "name": "Kled",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Kled.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Kled.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -539,7 +539,7 @@
     {
       "id": 68,
       "name": "Kog'Maw",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/KogMaw.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/KogMaw.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -547,7 +547,7 @@
     {
       "id": 69,
       "name": "K'Santé",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/KSante.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/KSante.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -555,7 +555,7 @@
     {
       "id": 70,
       "name": "LeBlanc",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Leblanc.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Leblanc.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -563,7 +563,7 @@
     {
       "id": 71,
       "name": "Lee Sin",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/LeeSin.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/LeeSin.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -571,7 +571,7 @@
     {
       "id": 72,
       "name": "Leona",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Leona.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Leona.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -579,7 +579,7 @@
     {
       "id": 73,
       "name": "Lillia",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Lillia.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Lillia.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -587,7 +587,7 @@
     {
       "id": 74,
       "name": "Lissandra",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Lissandra.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Lissandra.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -595,7 +595,7 @@
     {
       "id": 75,
       "name": "Lucian",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Lucian.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Lucian.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -603,7 +603,7 @@
     {
       "id": 76,
       "name": "Lulu",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Lulu.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Lulu.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -611,7 +611,7 @@
     {
       "id": 77,
       "name": "Lux",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Lux.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Lux.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -619,7 +619,7 @@
     {
       "id": 78,
       "name": "Malphite",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Malphite.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Malphite.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -627,7 +627,7 @@
     {
       "id": 79,
       "name": "Malzahar",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Malzahar.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Malzahar.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -635,7 +635,7 @@
     {
       "id": 80,
       "name": "Maokai",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Maokai.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Maokai.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -643,7 +643,7 @@
     {
       "id": 81,
       "name": "Maître Yi",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/MasterYi.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/MasterYi.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -651,7 +651,7 @@
     {
       "id": 82,
       "name": "Mel",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Mel.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Mel.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -659,7 +659,7 @@
     {
       "id": 83,
       "name": "Milio",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Milio.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Milio.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -667,7 +667,7 @@
     {
       "id": 84,
       "name": "Miss Fortune",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/MissFortune.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/MissFortune.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -675,7 +675,7 @@
     {
       "id": 85,
       "name": "Wukong",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/MonkeyKing.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/MonkeyKing.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -683,7 +683,7 @@
     {
       "id": 86,
       "name": "Mordekaiser",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Mordekaiser.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Mordekaiser.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -691,7 +691,7 @@
     {
       "id": 87,
       "name": "Morgana",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Morgana.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Morgana.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -699,7 +699,7 @@
     {
       "id": 88,
       "name": "Naafiri",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Naafiri.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Naafiri.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -707,7 +707,7 @@
     {
       "id": 89,
       "name": "Nami",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nami.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Nami.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -715,7 +715,7 @@
     {
       "id": 90,
       "name": "Nasus",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nasus.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Nasus.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -723,7 +723,7 @@
     {
       "id": 91,
       "name": "Nautilus",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nautilus.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Nautilus.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -731,7 +731,7 @@
     {
       "id": 92,
       "name": "Neeko",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Neeko.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Neeko.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -739,7 +739,7 @@
     {
       "id": 93,
       "name": "Nidalee",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nidalee.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Nidalee.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -747,7 +747,7 @@
     {
       "id": 94,
       "name": "Nilah",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nilah.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Nilah.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -755,7 +755,7 @@
     {
       "id": 95,
       "name": "Nocturne",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nocturne.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Nocturne.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -763,7 +763,7 @@
     {
       "id": 96,
       "name": "Nunu et Willump",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Nunu.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Nunu.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -771,7 +771,7 @@
     {
       "id": 97,
       "name": "Olaf",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Olaf.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Olaf.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -779,7 +779,7 @@
     {
       "id": 98,
       "name": "Orianna",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Orianna.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Orianna.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -787,7 +787,7 @@
     {
       "id": 99,
       "name": "Ornn",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ornn.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Ornn.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -795,7 +795,7 @@
     {
       "id": 100,
       "name": "Pantheon",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Pantheon.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Pantheon.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -803,7 +803,7 @@
     {
       "id": 101,
       "name": "Poppy",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Poppy.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Poppy.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -811,7 +811,7 @@
     {
       "id": 102,
       "name": "Pyke",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Pyke.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Pyke.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -819,7 +819,7 @@
     {
       "id": 103,
       "name": "Qiyana",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Qiyana.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Qiyana.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -827,7 +827,7 @@
     {
       "id": 104,
       "name": "Quinn",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Quinn.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Quinn.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -835,7 +835,7 @@
     {
       "id": 105,
       "name": "Rakan",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Rakan.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Rakan.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -843,7 +843,7 @@
     {
       "id": 106,
       "name": "Rammus",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Rammus.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Rammus.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -851,7 +851,7 @@
     {
       "id": 107,
       "name": "Rek'Sai",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/RekSai.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/RekSai.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -859,7 +859,7 @@
     {
       "id": 108,
       "name": "Rell",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Rell.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Rell.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -867,7 +867,7 @@
     {
       "id": 109,
       "name": "Renata Glasc",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Renata.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Renata.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -875,7 +875,7 @@
     {
       "id": 110,
       "name": "Renekton",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Renekton.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Renekton.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -883,7 +883,7 @@
     {
       "id": 111,
       "name": "Rengar",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Rengar.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Rengar.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -891,7 +891,7 @@
     {
       "id": 112,
       "name": "Riven",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Riven.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Riven.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -899,7 +899,7 @@
     {
       "id": 113,
       "name": "Rumble",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Rumble.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Rumble.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -907,7 +907,7 @@
     {
       "id": 114,
       "name": "Ryze",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ryze.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Ryze.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -915,7 +915,7 @@
     {
       "id": 115,
       "name": "Samira",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Samira.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Samira.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -923,7 +923,7 @@
     {
       "id": 116,
       "name": "Sejuani",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Sejuani.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Sejuani.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -931,7 +931,7 @@
     {
       "id": 117,
       "name": "Senna",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Senna.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Senna.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -939,7 +939,7 @@
     {
       "id": 118,
       "name": "Séraphine",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Seraphine.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Seraphine.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -947,7 +947,7 @@
     {
       "id": 119,
       "name": "Sett",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Sett.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Sett.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -955,7 +955,7 @@
     {
       "id": 120,
       "name": "Shaco",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Shaco.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Shaco.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -963,7 +963,7 @@
     {
       "id": 121,
       "name": "Shen",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Shen.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Shen.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -971,7 +971,7 @@
     {
       "id": 122,
       "name": "Shyvana",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Shyvana.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Shyvana.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -979,7 +979,7 @@
     {
       "id": 123,
       "name": "Singed",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Singed.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Singed.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -987,7 +987,7 @@
     {
       "id": 124,
       "name": "Sion",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Sion.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Sion.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -995,7 +995,7 @@
     {
       "id": 125,
       "name": "Sivir",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Sivir.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Sivir.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1003,7 +1003,7 @@
     {
       "id": 126,
       "name": "Skarner",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Skarner.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Skarner.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1011,7 +1011,7 @@
     {
       "id": 127,
       "name": "Smolder",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Smolder.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Smolder.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1019,7 +1019,7 @@
     {
       "id": 128,
       "name": "Sona",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Sona.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Sona.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1027,7 +1027,7 @@
     {
       "id": 129,
       "name": "Soraka",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Soraka.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Soraka.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1035,7 +1035,7 @@
     {
       "id": 130,
       "name": "Swain",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Swain.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Swain.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1043,7 +1043,7 @@
     {
       "id": 131,
       "name": "Sylas",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Sylas.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Sylas.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1051,7 +1051,7 @@
     {
       "id": 132,
       "name": "Syndra",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Syndra.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Syndra.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1059,7 +1059,7 @@
     {
       "id": 133,
       "name": "Tahm Kench",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/TahmKench.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/TahmKench.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1067,7 +1067,7 @@
     {
       "id": 134,
       "name": "Taliyah",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Taliyah.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Taliyah.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1075,7 +1075,7 @@
     {
       "id": 135,
       "name": "Talon",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Talon.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Talon.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1083,7 +1083,7 @@
     {
       "id": 136,
       "name": "Taric",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Taric.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Taric.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1091,7 +1091,7 @@
     {
       "id": 137,
       "name": "Teemo",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Teemo.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Teemo.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1099,7 +1099,7 @@
     {
       "id": 138,
       "name": "Thresh",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Thresh.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Thresh.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1107,7 +1107,7 @@
     {
       "id": 139,
       "name": "Tristana",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Tristana.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Tristana.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1115,7 +1115,7 @@
     {
       "id": 140,
       "name": "Trundle",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Trundle.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Trundle.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1123,7 +1123,7 @@
     {
       "id": 141,
       "name": "Tryndamere",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Tryndamere.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Tryndamere.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1131,7 +1131,7 @@
     {
       "id": 142,
       "name": "Twisted Fate",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/TwistedFate.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/TwistedFate.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1139,7 +1139,7 @@
     {
       "id": 143,
       "name": "Twitch",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Twitch.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Twitch.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1147,7 +1147,7 @@
     {
       "id": 144,
       "name": "Udyr",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Udyr.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Udyr.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1155,7 +1155,7 @@
     {
       "id": 145,
       "name": "Urgot",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Urgot.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Urgot.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1163,7 +1163,7 @@
     {
       "id": 146,
       "name": "Varus",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Varus.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Varus.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1171,7 +1171,7 @@
     {
       "id": 147,
       "name": "Vayne",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Vayne.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Vayne.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1179,7 +1179,7 @@
     {
       "id": 148,
       "name": "Veigar",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Veigar.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Veigar.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1187,7 +1187,7 @@
     {
       "id": 149,
       "name": "Vel'Koz",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Velkoz.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Velkoz.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1195,7 +1195,7 @@
     {
       "id": 150,
       "name": "Vex",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Vex.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Vex.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1203,7 +1203,7 @@
     {
       "id": 151,
       "name": "Vi",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Vi.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Vi.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1211,7 +1211,7 @@
     {
       "id": 152,
       "name": "Viego",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Viego.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Viego.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1219,7 +1219,7 @@
     {
       "id": 153,
       "name": "Viktor",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Viktor.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Viktor.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1227,7 +1227,7 @@
     {
       "id": 154,
       "name": "Vladimir",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Vladimir.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Vladimir.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1235,7 +1235,7 @@
     {
       "id": 155,
       "name": "Volibear",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Volibear.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Volibear.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1243,7 +1243,7 @@
     {
       "id": 156,
       "name": "Warwick",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Warwick.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Warwick.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1251,7 +1251,7 @@
     {
       "id": 157,
       "name": "Xayah",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Xayah.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Xayah.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1259,7 +1259,7 @@
     {
       "id": 158,
       "name": "Xerath",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Xerath.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Xerath.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1267,7 +1267,7 @@
     {
       "id": 159,
       "name": "Xin Zhao",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/XinZhao.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/XinZhao.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1275,7 +1275,7 @@
     {
       "id": 160,
       "name": "Yasuo",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Yasuo.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Yasuo.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1283,7 +1283,7 @@
     {
       "id": 161,
       "name": "Yone",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Yone.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Yone.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1291,7 +1291,7 @@
     {
       "id": 162,
       "name": "Yorick",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Yorick.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Yorick.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1299,7 +1299,7 @@
     {
       "id": 163,
       "name": "Yuumi",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Yuumi.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Yuumi.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1307,7 +1307,7 @@
     {
       "id": 164,
       "name": "Zac",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Zac.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Zac.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1315,7 +1315,7 @@
     {
       "id": 165,
       "name": "Zed",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Zed.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Zed.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1323,7 +1323,7 @@
     {
       "id": 166,
       "name": "Zeri",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Zeri.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Zeri.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1331,7 +1331,7 @@
     {
       "id": 167,
       "name": "Ziggs",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Ziggs.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Ziggs.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1339,7 +1339,7 @@
     {
       "id": 168,
       "name": "Zilean",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Zilean.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Zilean.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1347,7 +1347,7 @@
     {
       "id": 169,
       "name": "Zoé",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Zoe.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Zoe.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1355,7 +1355,7 @@
     {
       "id": 170,
       "name": "Zyra",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Zyra.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Zyra.png",
       "hp": 5,
       "roles": [],
       "win": false
@@ -1363,7 +1363,7 @@
      {
       "id": 171,
       "name": "Yunara",
-      "image": "https://ddragon.leagueoflegends.com/cdn/15.10.1/img/champion/Yunara.png",
+      "image": "https://opgg-static.akamaized.net/meta/images/lol/15.18.1/champion/Yunara.png",
       "hp": 5,
       "roles": [],
       "win": false
